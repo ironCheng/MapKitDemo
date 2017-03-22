@@ -7,6 +7,7 @@ MapKit Using CoreLocation
     #import <MapKit/MapKit.h>
     #import "iRonAnnotation.h"
     
+    - (void)init{
     _mapView = [[MKMapView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.view addSubview:_mapView];
     //设置代理
@@ -34,7 +35,7 @@ MapKit Using CoreLocation
     _mapView.mapType=MKMapTypeStandard;
     //添加大头针
     [self addAnnotation];
-    
+    }
     
     
     #pragma mark 添加大头针
